@@ -11,8 +11,7 @@ horse.o: horse.cpp horse.h
 	g++ -c horse.cpp
 
 clean: 
-	rm *.o
-	rm race
+	rm -f *.o race
 
-run:	race
+run: race
 	./race
